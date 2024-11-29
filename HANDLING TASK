@@ -1,0 +1,43 @@
+Handling Tasks Using Data Manipulation, Machine Learning, and Evaluation
+
+I. Introduction
+In this assignment, I will outline the steps I took to handle my task involving data extraction, cleaning, manipulation, machine learning, and evaluation. The task focused on analyzing Tesla's sales data for 2024 and predicting Q4 performance.
+
+II. Approach
+    1. Data Extraction
+        ◦ I began by extracting Tesla's sales data from a PDF report for the year 2024. This step was crucial to obtain the raw data needed for analysis.  ”tesladata.py"
+
+    2. Data Cleaning
+        ◦ Before proceeding to visualization and machine learning, I cleaned the data to ensure accuracy. This involved handling missing values, correcting inconsistencies, and preparing the dataset for further processing.
+        "cleaning_tesla_data.ipynb"
+    3. Data Manipulation and Visualization
+        ◦ After cleaning, I used tools for data manipulation and visualization to better understand trends and patterns in the sales data._"Tesla_sale_prediction.ipynb"
+
+III. Tools and Libraries Used
+    1. Visualization
+        ◦ matplotlib.pyplot: A powerful Python library used for creating visual representations of data, such as line charts, bar graphs, and scatter plots.
+    2. Data Manipulation
+        ◦ pandas: A library for data manipulation and analysis. It provides data structures like DataFrame and Series for handling structured data efficiently.
+        ◦ numpy: A numerical computing library used to handle arrays and perform mathematical operations on data.
+    3. Machine Learning
+        ◦ XGBRegressor: A regression model from the xgboost library. This high-performance library specializes in gradient boosting for building predictive models.
+        ◦ sklearn.linear_model.LinearRegression: A simple regression model that assumes a linear relationship between input and output.
+    4. Data Splitting
+        ◦ train_test_split: A function from sklearn.model_selection used to split the dataset into training and testing subsets. This ensures the model is trained on one part of the data and tested on another, reducing the risk of overfitting.
+    5. Model Evaluation
+        ◦ mean_squared_error (MSE): Evaluates the average squared difference between actual and predicted values, penalizing larger errors more heavily.
+        ◦ mean_absolute_error (MAE): Measures the average absolute difference between actual and predicted values, providing a more intuitive error metric.
+
+IV. Application of Tools in the Task
+    • Prediction for Tesla Q4 Performance
+        ◦ To predict Tesla's Q4 sales, I used both XGBRegressor and LinearRegression. These models allowed me to evaluate trends and forecast outcomes based on historical data.
+        ◦ The following metrics were applied to evaluate model performance:
+            ▪ MSE: Ensures the model minimizes significant deviations in predictions.
+            ▪ MAE: Provides an intuitive understanding of average prediction errors.
+
+V. Summary
+    • Data Preparation: Handled using pandas for structured data management and numpy for numerical computations.
+    • Model Building: Utilized XGBRegressor for gradient boosting and LinearRegression for linear regression.
+    • Data Splitting: Achieved using train_test_split to divide the data into training and testing sets.
+    • Model Evaluation: Performed using mean_squared_error and mean_absolute_error to measure prediction accuracy.
+    • Visualization: Used matplotlib to create insightful plots for better data understanding.
